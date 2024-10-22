@@ -1,3 +1,8 @@
+<script setup>
+import InventoryTable from '../components/InventoryTable.vue'
+import { getInventoryData } from '../store.js'
+</script>
+
 <template>
-  <p>Hallo!</p>
+  <InventoryTable v-model="getInventoryData" />
 </template>

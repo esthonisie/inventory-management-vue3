@@ -1,3 +1,5 @@
+import { ref, computed } from 'vue'
+
 // state
 const inventory = ref([
   { id: 1, name: "Schetsboek A5", actualAmount: 14, minimumAmount: 10 },
@@ -10,5 +12,6 @@ const inventory = ref([
 ]);
 
 // getters
+export const getInventoryData = computed(() => inventory.value);
 
 // actions
