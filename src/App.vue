@@ -4,6 +4,10 @@ import { RouterView } from 'vue-router'
 
 <template>
   <div class="main-container">
+    <nav>
+      <RouterLink to="/">home</RouterLink>
+      <RouterLink to="/create">add new item</RouterLink>
+    </nav>
     <RouterView />
   </div>
 </template>
@@ -13,5 +17,15 @@ import { RouterView } from 'vue-router'
     width: 768px;
     max-width: 768px;
     margin: 40px auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 5px;
+  }
+
+  a {
+    color: #fb9f93;
   }
 </style>

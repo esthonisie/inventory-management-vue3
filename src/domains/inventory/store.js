@@ -15,3 +15,4 @@ const inventory = ref([
 export const getInventoryData = computed(() => inventory.value);
 
 // actions
+export const addInventoryData = (data) => inventory.value.push(data);

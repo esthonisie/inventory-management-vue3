@@ -7,6 +7,11 @@ const routes = [
     name: 'home', 
     component: HomeView 
   },
+  { 
+    path: '/create',
+    name: 'create', 
+    component: () => import('@/domains/inventory/views/CreateView.vue') 
+  },
 ];
 
 const router = createRouter({
