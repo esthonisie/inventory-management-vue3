@@ -7,6 +7,7 @@ import { RouterView } from 'vue-router'
   <div class="main-container">
     <nav>
       <RouterLink to="/">home</RouterLink>
+      <RouterLink to="/order">order item</RouterLink>
       <RouterLink to="/create">add new item</RouterLink>
     </nav>
     <RouterView />

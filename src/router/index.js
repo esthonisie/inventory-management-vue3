@@ -17,6 +17,11 @@ const routes = [
     name: 'edit',
     component: () => import('@/domains/inventory/views/EditView.vue')
   },
+  { 
+    path: '/order',
+    name: 'order',
+    component: () => import('@/domains/inventory/views/OrderView.vue')
+  },
 ];
 
 const router = createRouter({
