@@ -1,6 +1,6 @@
 <script setup>
 const inventoryData = defineModel('data');
-import { RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>

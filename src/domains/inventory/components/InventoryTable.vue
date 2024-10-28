@@ -9,6 +9,7 @@ const showInventoryData = defineModel();
     <thead>
       <tr>
         <th>Name</th>
+        <th></th>
         <th>Amount (actual)</th>
         <th>Amount (minimum)</th>
       </tr>
@@ -16,6 +17,11 @@ const showInventoryData = defineModel();
     <tbody>
       <tr v-for="data in showInventoryData">
         <td>{{ data.name }}</td>
+        <td>
+          <RouterLink :to="`/edit/${data.id}`">
+            edit
+          </RouterLink>
+        </td>
         <td>
           <form>
             <input type="number" v-model="data.actualAmount" min="0" max="50">
@@ -46,5 +52,9 @@ const showInventoryData = defineModel();
   th {
     text-transform: uppercase;
     text-align: left;
+  }
+
+  a {
+    color: #fb9f93;
   }
 </style>
