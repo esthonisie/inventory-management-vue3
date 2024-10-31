@@ -1,10 +1,11 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import { RouterView } from 'vue-router'
+import { RouterLink } from "vue-router";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
   <div class="main-container">
+    <!-- TODO: evt. afsplitsen naar apart Navigation component -->
     <nav>
       <RouterLink to="/">home</RouterLink>
       <RouterLink to="/order">order item</RouterLink>
@@ -15,19 +16,19 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-  .main-container {
-    width: 768px;
-    max-width: 768px;
-    margin: 40px auto;
-  }
+.main-container {
+  width: 768px;
+  max-width: 768px;
+  margin: 40px auto;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px 5px;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 5px;
+}
 
-  a {
-    color: #fb9f93;
-  }
+a {
+  color: #fb9f93;
+}
 </style>
